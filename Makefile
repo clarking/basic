@@ -2,9 +2,9 @@ TARGET = basic
 
 BUILD_FOLDER = build/basic
 
-SOURCE_FOLDERS += ./arch/osx ./src
+SOURCE_FOLDERS += ./arch/linux ./src
 
-CC = gcc-10
+CC = gcc
 CFLAGS = -g -Wall -Werror -std=c99 -lreadline -lm -DARCH_OSX=1 -DARCH_XMEGA=2 -DARCH=1
 
 VPATH = $(SOURCE_FOLDERS)
